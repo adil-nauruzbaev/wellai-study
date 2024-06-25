@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
       bloc: CoreDi.get(),
       listener: (context, state) {
         if (state is PersonalInfoData) {
-          if (state.personalInfo.roles?.first.prefix == 'doctor') {
+          if (state.personalInfo.roles?.first.prefix == 'docto') {
             context.rootRouter.use.push(const DocRootScreen());
           } else {
             context.rootRouter.use.push(const RootScreen());
